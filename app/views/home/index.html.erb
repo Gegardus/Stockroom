@@ -1,0 +1,15 @@
+<h1>Home</h1>
+
+<%= render(ComponentNameComponent.new(title: "my title")) do %>
+  I will replace with content in the component view
+<% end %>
+
+<br/>
+
+<%= render(ComponentNameComponent.new(title: "my title").with_content("Now i will replace with content")) %>
+
+<%
+=begin%>
+ <span title="my title">I will replace with content in the component view</span> 
+<%
+=end%>
