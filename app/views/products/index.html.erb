@@ -1,5 +1,11 @@
 <h1>Products</h1>
 
+<%= render(ComponentNameComponent.new(title: "my title").with_content("Now i will replace with content")) %>
+
+<%= render(ProductComponent.with_collection(@products)) %>
+
+<%= render(ProductComponent.new(product: "my product").with_content("And now i will replace with product: ")) %>
+
 <%= link_to "New Product", new_product_path %> <br/>
 
 <%= link_to "Home", home_index_path %>

@@ -8,6 +8,10 @@
 
 <%= render(ComponentNameComponent.new(title: "my title").with_content("Now i will replace with content")) %>
 
+<%= render(ButtonComponent.new(text: 'Click me!', style: 'primary')) %>
+<%= render(ButtonComponent.new(text: 'Save', style: 'success')) %>
+<%= render(ButtonComponent.new(text: 'Cancel', style: 'secondary')) %>
+
 <%
 =begin%>
  <span title="my title">I will replace with content in the component view</span> 
